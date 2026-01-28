@@ -1,0 +1,2 @@
+Please place your resume.pdf file in this directory.
+The 'Downlaod Resume' button in the Hero section links to /resume.pdf.

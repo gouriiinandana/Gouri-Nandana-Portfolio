@@ -1,0 +1,78 @@
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    width: 2px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 3rem;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: 11px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background: var(--bg-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 243, 255, 0.2);
+    z-index: 1;
+}
+
+.timeline-content {
+    background: var(--surface-color);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.exp-header {
+    margin-bottom: 1rem;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+    padding-bottom: 1rem;
+}
+
+.exp-header h3 {
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.company {
+    display: block;
+    color: var(--primary-color);
+    font-family: var(--font-main);
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+}
+
+.period {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.exp-list {
+    list-style: disc;
+    padding-left: 1.2rem;
+}
+
+.exp-list li {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}

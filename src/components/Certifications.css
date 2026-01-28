@@ -1,0 +1,66 @@
+.cert-edu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+@media (max-width: 768px) {
+    .cert-edu-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.cert-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.cert-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: var(--surface-color);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    border-left: 3px solid var(--primary-color);
+    transition: transform 0.2s ease;
+}
+
+.cert-item:hover {
+    transform: translateX(10px);
+}
+
+.cert-icon {
+    color: var(--primary-color);
+    flex-shrink: 0;
+}
+
+.edu-card {
+    background: var(--surface-color);
+    padding: 2.5rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.edu-icon {
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+}
+
+.edu-card h3 {
+    font-size: 1.25rem;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.edu-spec {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.edu-uni {
+    color: var(--text-secondary);
+    font-family: var(--font-mono);
+}
