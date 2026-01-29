@@ -3,11 +3,12 @@ import { Award, BookOpen } from 'lucide-react';
 import './Certifications.css';
 
 const certifications = [
-    "Foundations of Cybersecurity – Coursera",
-    "Introduction to Cybersecurity Tools & Cyberattacks – IBM",
-    "Operating Systems: Overview, Administration, and Security – IBM",
-    "Postman API Fundamentals – Student Expert",
-    "Oracle Discover and Train in Cybersecurity"
+    "CEH (ECCouncil)",
+    "AWS Certified Cloud Practitioner (AWS)",
+    "Ethical Hacker (Cisco)",
+    "Blockchain and its Application (NPTEL)",
+    "Cybersecurity Fundamentals (IBM)",
+    "AWS Solutions Architect- Associate (Ethnus)"
 ];
 
 const education = {

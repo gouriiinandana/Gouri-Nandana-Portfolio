@@ -1,5 +1,5 @@
 import React from 'react';
-import { Download, Rocket, Mail, ChevronDown } from 'lucide-react';
+import { Download, Rocket, Mail } from 'lucide-react';
 import './Hero.css';
 
 const Hero = () => {
@@ -7,17 +7,17 @@ const Hero = () => {
         <section id="home" className="hero">
             <div className="container hero-container">
 
-                {/* Top Badge */}
+                {/* Badge */}
                 <div className="hero-badge">
                     <span className="dot"></span> Security Engineer • Cloud Security
                 </div>
 
-                {/* Main Heading */}
+                {/* Title */}
                 <h1 className="hero-title">
                     Hi, I'm <span className="text-highlight">Gouri Nandana</span>
                 </h1>
 
-                {/* Subheading */}
+                {/* Roles */}
                 <div className="hero-roles">
                     <span>Security Engineer</span>
                     <span className="divider">|</span>
@@ -26,12 +26,12 @@ const Hero = () => {
                     <span className="blue-text">VAPT Specialist</span>
                 </div>
 
-                {/* Quote/Description */}
+                {/* Description */}
                 <p className="hero-description">
                     "Securing Applications, Cloud Infrastructure, and Digital Assets through Proactive Security Testing and Monitoring"
                 </p>
 
-                {/* CTA Buttons */}
+                {/* Buttons */}
                 <div className="hero-buttons">
                     <a href="/resume.pdf" className="btn btn-green" download>
                         <Download size={18} /> View Resume

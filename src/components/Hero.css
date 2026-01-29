@@ -1,20 +1,23 @@
 .hero {
     min-height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    background: radial-gradient(circle at 50% 50%, rgba(0, 243, 255, 0.03) 0%, transparent 60%);
+    justify-content: center;
     position: relative;
-    padding-top: 60px;
-    /* Offset for navbar */
+    padding: 100px 0;
+    overflow: hidden;
+    /* Static vivid glow background */
+    background: radial-gradient(circle at 50% 40%, rgba(0, 243, 255, 0.15) 0%, rgba(0, 255, 157, 0.05) 30%, rgba(5, 5, 16, 0) 70%),
+        var(--bg-color);
 }
 
 .hero-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     max-width: 900px;
+    z-index: 2;
 }
 
 /* Badge */
@@ -46,16 +49,17 @@
     font-weight: 800;
     margin-bottom: 1rem;
     letter-spacing: -1px;
+    color: var(--text-primary);
 }
 
 .text-highlight {
     color: var(--secondary-color);
-    /* Greenish teal from image */
     background: linear-gradient(120deg, #00f3ff, #00ff9d);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
+/* Roles */
 .hero-roles {
     font-size: 1.5rem;
     color: var(--primary-color);
@@ -80,6 +84,7 @@
     color: var(--primary-color);
 }
 
+/* Description */
 .hero-description {
     font-size: 1.1rem;
     color: var(--text-secondary);
@@ -134,7 +139,7 @@
     transform: translateY(-3px);
 }
 
-/* Scroll Indication */
+/* Scroll Indicator */
 .scroll-indicator {
     display: flex;
     flex-direction: column;
@@ -146,6 +151,12 @@
     position: absolute;
     bottom: 2rem;
     opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.scroll-indicator:hover {
+    opacity: 1;
+    color: var(--primary-color);
 }
 
 .shield-icon {

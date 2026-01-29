@@ -1,14 +1,28 @@
 import React from 'react';
-import { Lock, Cloud, ShieldCheck, Globe } from 'lucide-react';
+import { Lock, Cloud, ShieldCheck, Globe, Activity, Wifi } from 'lucide-react';
 import './Projects.css';
 
 const projects = [
     {
-        title: "Secure File Storage (Hybrid Cryptography)",
-        category: "Application Security",
+        title: "OpenWRT Integrated Raspberry Pi Router",
+        category: "Network Security",
+        icon: <Wifi size={20} />,
+        desc: "Designed and deployed a custom router using OpenWRT on Raspberry Pi. Implemented VPN, firewall rules for traffic control and network stability.",
+        tech: ["Raspberry Pi", "OpenWRT", "Python"]
+    },
+    {
+        title: "Swift Help (Hospital Management)",
+        category: "Full Stack Development",
+        icon: <Activity size={20} />,
+        desc: "Built a blood bank platform to streamline donor-recipient interactions. Integrated real-time inventory monitoring and automated replenishment.",
+        tech: ["React", "ExpressJS", "NodeJS", "MongoDB"]
+    },
+    {
+        title: "Secure Cloud Storage (Hybrid Crypto)",
+        category: "Cloud Security",
         icon: <Lock size={20} />,
-        desc: "Designed a secure file storage system using symmetric & asymmetric encryption to ensure confidentiality and integrity of sensitive data.",
-        tech: ["Cryptography", "Python/Java", "Security"]
+        desc: "Architected a secure cloud storage solution using hybrid cryptography. Integrated dynamic key rotation and multi-layered encryption.",
+        tech: ["Cryptography", "Cloud", "Security"]
     },
     {
         title: "AWS Cloud Monitoring & Security",

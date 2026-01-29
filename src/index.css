@@ -32,6 +32,8 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+  /* Offset for navbar */
 }
 
 body {
@@ -40,6 +42,17 @@ body {
   color: var(--text-primary);
   line-height: 1.6;
   overflow-x: hidden;
+  /* Cyber Grid Background Pattern */
+  background-image:
+    linear-gradient(rgba(0, 243, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 243, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-attachment: fixed;
+}
+
+::selection {
+  background: rgba(0, 243, 255, 0.3);
+  color: #fff;
 }
 
 a {

@@ -20,15 +20,22 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    background: var(--surface-color);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: var(--text-secondary);
+
+    /* Added card styling */
+    background: rgba(255, 255, 255, 0.02);
     padding: 1rem;
-    border-radius: var(--border-radius);
-    border-left: 3px solid var(--primary-color);
-    transition: transform 0.2s ease;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
 }
 
 .cert-item:hover {
-    transform: translateX(10px);
+    border-color: var(--primary-color);
+    background: rgba(0, 243, 255, 0.05);
+    transform: translateX(5px);
 }
 
 .cert-icon {
@@ -38,10 +45,16 @@
 
 .edu-card {
     background: var(--surface-color);
-    padding: 2.5rem;
+    padding: 2rem;
     border-radius: var(--border-radius);
-    text-align: center;
     border: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.edu-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 20px rgba(0, 243, 255, 0.1);
 }
 
 .edu-icon {
