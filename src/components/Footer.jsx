@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="container footer-content">
-                <p>© 2025 Gouri Nandana. All rights reserved.</p>
+                <p>© 2026 Gouri Nandana. All rights reserved.</p>
                 <div className="social-links">
                     <a href="https://www.linkedin.com/in/gouri-nandana/" target="_blank" rel="noopener noreferrer">
                         <Linkedin size={24} />
